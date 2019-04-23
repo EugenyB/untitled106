@@ -32,5 +32,9 @@ public class GameView {
         for (int i = 0; i <=field.getHeight() ; i++) {
             g2.strokeLine(0, i*cellSize, field.getWidth()*cellSize, i*cellSize);
         }
+        int x = field.getKolobok().getX();
+        int y = field.getKolobok().getY();
+        g2.setFill(Color.RED);
+        g2.fillOval(x*cellSize+2, y*cellSize+2, cellSize-4, cellSize-4);
     }
 }

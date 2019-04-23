@@ -32,4 +32,12 @@ public class GameField {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public Kolobok getKolobok() {
+        return kolobok;
+    }
+
+    public void tick() {
+        kolobok.move();
+    }
 }

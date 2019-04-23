@@ -3,53 +3,18 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="589.0">game.Controller</node>
-    <node x="689.0" y="333.0">game.Kolobok</node>
-    <node x="131.0" y="947.0">game.GameView</node>
-    <node x="806.0" y="0.0">game.Direction</node>
-    <node x="303.0" y="534.0">game.GameField</node>
-    <node x="1038.0" y="314.0">game.Position</node>
-    <node x="0.0" y="1266.0">game.Main</node>
+    <node x="1187.5" y="1335.5">game.Controller</node>
+    <node x="697.0" y="58.5">game.Kolobok</node>
+    <node x="1609.5" y="1023.0">game.GameView</node>
+    <node x="330.0" y="1423.5">game.Direction</node>
+    <node x="1196.5" y="561.0">game.GameField</node>
+    <node x="42.0" y="1467.5">game.Position</node>
+    <node x="-9.0" y="1930.0">game.Main</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="game.Kolobok" target="game.Position">
-      <point x="0.0" y="5.1731378269263075" />
-      <point x="0.0" y="5.173137826926286" />
-    </edge>
-    <edge source="game.Controller" target="game.GameField">
-      <point x="0.0" y="5.1155387110129595" />
-      <point x="0.0" y="5.115538711012903" />
-    </edge>
-    <edge source="game.Controller" target="game.GameView">
-      <point x="-6.198016041898825" y="0.0" />
-      <point x="-6.198016041898896" y="0.0" />
-    </edge>
-    <edge source="game.Direction" target="game.Position">
-      <point x="4.01778596672375" y="-2.9761377531286826" />
-      <point x="4.01778596672375" y="-2.9761377531286897" />
-    </edge>
-    <edge source="game.Kolobok" target="game.GameField">
-      <point x="0.0" y="11.134834296005806" />
-      <point x="0.0" y="11.13483429600592" />
-    </edge>
-    <edge source="game.Kolobok" target="game.Direction">
-      <point x="-4.721767804083186" y="-1.644660695804248" />
-      <point x="-4.7217678040832425" y="-1.644660695804248" />
-    </edge>
-    <edge source="game.GameField" target="game.Kolobok">
-      <point x="0.0" y="-11.13483429600592" />
-      <point x="0.0" y="-11.134834296005835" />
-    </edge>
-    <edge source="game.GameView" target="game.GameField">
-      <point x="-4.845485869614713" y="-1.2333964031746518" />
-      <point x="-4.845485869614713" y="-1.2333964031746518" />
-    </edge>
-  </edges>
-  <settings layout="Hierarchic Group" zoom="0.5259467040673211" x="646.0" y="703.0000000000001" />
-  <SelectedNodes>
-    <node>game.Kolobok</node>
-  </SelectedNodes>
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.36023622047244097" x="1031.0" y="1064.0" />
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
