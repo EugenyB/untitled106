@@ -1,8 +1,12 @@
-package game;
+package game.view;
 
+import game.logic.Food;
+import game.logic.GameField;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
+
+import java.util.List;
 
 public class GameView {
     private GameField field;
@@ -36,5 +40,13 @@ public class GameView {
         int y = field.getKolobok().getY();
         g2.setFill(Color.RED);
         g2.fillOval(x*cellSize+2, y*cellSize+2, cellSize-4, cellSize-4);
+
+        List<Food> foods = field.getFoods();
+        g2.setFill(new Color(1,1,0, 0.5));
+        if (foods!=null) {
+            for (Food food : foods) {
+                g2.fillRect(food.getPosition().getX()*cellSize+2, food.getPosition().getY()*cellSize+2, cellSize-4, cellSize-4);
+            }
+        }
     }
 }

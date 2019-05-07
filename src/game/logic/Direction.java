@@ -1,4 +1,4 @@
-package game;
+package game.logic;
 
 public interface Direction {
     Position next(Position current);

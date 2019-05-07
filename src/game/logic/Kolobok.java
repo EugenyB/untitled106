@@ -1,4 +1,4 @@
-package game;
+package game.logic;
 
 public class Kolobok {
     private int x;
@@ -35,5 +35,9 @@ public class Kolobok {
 
     public int getY() {
         return y;
+    }
+
+    public Position getPosition() {
+        return new Position(x,y);
     }
 }

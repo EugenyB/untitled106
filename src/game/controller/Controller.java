@@ -1,8 +1,13 @@
-package game;
+package game.controller;
 
+import game.logic.Direction;
+import game.logic.GameField;
+import game.view.GameView;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.input.KeyEvent;
@@ -31,7 +36,7 @@ public class Controller {
 
         timeline = new Timeline(new KeyFrame(Duration.millis(1000), e->processTick()));
         timeline.setCycleCount(Animation.INDEFINITE);
-        timeline.play();
+        //timeline.play();
 
     }
 
@@ -57,5 +62,13 @@ public class Controller {
             case DOWN: field.getKolobok().setDir(Direction.DOWN);
             break;
         }
+    }
+
+    public void exit() {
+        Platform.exit();
+    }
+
+    public void start(ActionEvent actionEvent) {
+        timeline.play();
     }
 }
